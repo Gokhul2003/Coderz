@@ -99,12 +99,12 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-800 flex flex-col">
       <header className="bg-white shadow-md">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
           <div className="flex items-center space-x-3">
             <img src={logo} alt="Logo" className="h-10 w-10 rounded-full" />
             <h1 className="text-xl font-semibold text-gray-700">Coderz</h1>
           </div>
-          <div className="flex space-x-4">
+          <div className="flex flex-wrap space-x-4 mt-4 sm:mt-0">
             <select
               onChange={onThemeChange}
               value={theme}
@@ -130,10 +130,10 @@ const Home = () => {
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-6 flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6">
+      <main className="container mx-auto px-4 py-6 flex flex-col lg:flex-row lg:space-x-6 space-y-6 lg:space-y-0">
         <section className="flex-1 bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-lg font-semibold text-gray-700 mb-4">Code Editor</h2>
-          <div className="border rounded-lg overflow-y-auto h-96">
+          <div className="border rounded-lg overflow-y-auto h-64 sm:h-80 lg:h-96">
             <Editor
               value={code}
               theme={theme}
@@ -141,7 +141,7 @@ const Home = () => {
               editorRef={editorRef}
             />
           </div>
-          <div className="flex justify-end mt-4 space-x-4">
+          <div className="flex flex-wrap justify-end mt-4 space-x-4">
             <button
               onClick={clearCode}
               className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400"
@@ -164,14 +164,14 @@ const Home = () => {
               id="input"
               placeholder="Enter your input here"
               onChange={(e) => setInput(e.target.value)}
-              className="w-full h-32 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full h-24 sm:h-32 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
             ></textarea>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-lg font-semibold text-gray-700 mb-4">Output</h2>
             <div
               id="output"
-              className="w-full h-40 p-3 border rounded-lg bg-gray-50 overflow-y-auto"
+              className="w-full h-28 sm:h-40 p-3 border rounded-lg bg-gray-50 overflow-y-auto"
             >
               {isLoading ? (
                 <div className="flex justify-center items-center h-full">
@@ -185,7 +185,7 @@ const Home = () => {
         </section>
       </main>
 
-      <footer className="bg-gray-800 text-white py-4 fixed bottom-0 w-full">
+      <footer className="bg-gray-800 text-white py-4 mt-6">
         <div className="container mx-auto text-center">
           <p>&copy; 2024 Coderz. Made by Gokhul Kooranchi.</p>
         </div>
