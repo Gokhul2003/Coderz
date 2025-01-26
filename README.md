@@ -11,7 +11,7 @@ code.
   </div>
 
 </div>
-![image](https://github.com/user-attachments/assets/d4fa2374-caba-4aae-8366-48b35e6334c5)
+(https://github.com/user-attachments/assets/d4fa2374-caba-4aae-8366-48b35e6334c5)
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 - React.js
