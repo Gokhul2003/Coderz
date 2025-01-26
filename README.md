@@ -11,7 +11,7 @@ code.
   </div>
 
 </div>
-(https://github.com/user-attachments/assets/d4fa2374-caba-4aae-8366-48b35e6334c5)
+  <img src="https://github.com/user-attachments/assets/6f27528e-b272-4832-84f4-a03dba296ec2" alt="tailwindcss" />
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 - React.js
