@@ -58,7 +58,9 @@ npm install
 
 **Set Up Environment Variables:**
 
-Create a new file named `.env.local` in the root of your project and add the following content:
+Create `.env.local` File: In the root of your project, create a file named `.env.local`.
+
+Add the API Key to the `.env.local` File: You need to get the API key from RapidAPI for OnCompiler. Once you have the key, add it to the `.env.local` file in the following format
 
 ```env
 VITE_ONECOMPILER_API=' '
